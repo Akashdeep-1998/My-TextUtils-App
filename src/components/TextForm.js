@@ -11,17 +11,17 @@ const TextForm = (props) => {
   };
   const handleUppercase = () => {
     setText(text.toUpperCase());
-    props.showAlert("Text has been converted to Uppercase (ᵔ‿ᵔ)","success");
+    props.showAlert("Text has been converted to Uppercase.","success");
   };
 
   const handleLowercase = () => {
     setText(text.toLowerCase());
-    props.showAlert("Text has been converted to Lowercase (ᵔ‿ᵔ)","success");
+    props.showAlert("Text has been converted to Lowercase.","success");
   };
 
   const handleClear = () => {
     setText("");
-    props.showAlert("Text has been removed from textbox (ᵔ‿ᵔ)","success");
+    props.showAlert("Text has been removed from textbox.","success");
   };
 
   const wordCount = (words) => {
@@ -32,14 +32,14 @@ const TextForm = (props) => {
   const removeSpaces = () => {
     let txt = text.replace(/\s+/g, ' ');
     setText(txt);
-    props.showAlert("Extra spaces have been removed (ᵔ‿ᵔ)","success");
+    props.showAlert("Extra spaces have been removed.","success");
   };
 
   const copyText = () => {
     let txt = document.getElementById("myBox");
     txt.select();
     navigator.clipboard.writeText(txt.value);
-    props.showAlert("Text has been copied (ᵔ‿ᵔ)","success");
+    props.showAlert("Text has been copied.","success");
   };
 
   return (

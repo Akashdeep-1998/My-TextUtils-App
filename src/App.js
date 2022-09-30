@@ -17,12 +17,12 @@ const App = () => {
       setMode("dark");
       document.body.style.backgroundColor = '#080808';
 
-      showAlert("Dark mode has been enabled (ᵔ‿ᵔ)", "success")
+      showAlert("Dark mode has been enabled.", "success")
     }
     else {
       setMode("light");
       document.body.style.backgroundColor = 'white';
-      showAlert("Dark mode has been disabled (ᵔ︵ᵔ)", "success")
+      showAlert("Dark mode has been disabled.", "success")
     }
   }
 
